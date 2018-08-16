@@ -135,8 +135,9 @@ include_directories(
 FIND_LIBRARY(WIRINGPI_LIBRARY wiringPi) # add path if needed - 
 
 add_executable(read_voltage src/read_voltage.cpp)
-add_executable(publisher src/publisher.cpp)
+#add_executable(publisher src/publisher.cpp)
 add_executable(subscriber src/subscriber.cpp)
+add_executable(battery_status src/battery_status.cpp)
 
 
 
@@ -153,9 +154,11 @@ add_executable(subscriber src/subscriber.cpp)
 ## Specify libraries to link a library or executable target against
 target_link_libraries(read_voltage ${catkin_LIBRARIES} ${WIRINGPI_LIBRARY} pthread crypt m rt)
 
-target_link_libraries(publisher ${catkin_LIBRARIES} ${WIRINGPI_LIBRARY} pthread crypt m rt)
+#target_link_libraries(publisher ${catkin_LIBRARIES} ${WIRINGPI_LIBRARY} pthread crypt m rt)
 
 target_link_libraries(subscriber ${catkin_LIBRARIES})
+
+target_link_libraries(battery_status ${catkin_LIBRARIES} ${WIRINGPI_LIBRARY} pthread crypt m rt)
 
 #############
 ## Install ##
