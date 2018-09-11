@@ -138,7 +138,6 @@ add_executable(read_voltage src/read_voltage.cpp)
 #add_executable(publisher src/publisher.cpp)
 add_executable(subscriber src/subscriber.cpp)
 add_executable(battery_status src/battery_status.cpp)
-add_executable(test_git src/test_git.cpp)
 add_executable(led_glow src/led_glow.cpp)
 
 
@@ -161,8 +160,6 @@ target_link_libraries(read_voltage ${catkin_LIBRARIES} ${WIRINGPI_LIBRARY} pthre
 target_link_libraries(subscriber ${catkin_LIBRARIES})
 
 target_link_libraries(battery_status ${catkin_LIBRARIES} ${WIRINGPI_LIBRARY} pthread crypt m rt)
-
-target_link_libraries(test_git ${catkin_LIBRARIES} ${WIRINGPI_LIBRARY} pthread crypt m rt)
 
 target_link_libraries(led_glow ${catkin_LIBRARIES} ${WIRINGPI_LIBRARY} pthread crypt m rt)
 
