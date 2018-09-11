@@ -13,14 +13,14 @@ For example, let's say you want to measure the actual level of a battery with ra
 Scaling the voltage using a voltage divider, \
 [R2/(R1+R2)]*25.4 = 1.8. \
 This gives, R1 = 13.11 R2 \
-In this case, we choose R1 = 680k and R2 = 51.1k*  \
+In this case, we choose R1 = 680k and R2 = 51.1k*  
 
 Since the analog pin has a 12 bit input, the value of the voltage ranges from 0 to 4096.
 This value is published on the topic /status. This value is used to determine the charge of the battery and color of the LED.
 A message of type std_msgs::ColorRGBA is published under the topic name /color. This topic is subscribed in another node to fire up the LED. \
 Green LED = 66.6 - 100% \
 Yellow LED = 33.3 - 66.6% \
-Red LED = 0 - 33.3% \
+Red LED = 0 - 33.3% 
 
 
 
