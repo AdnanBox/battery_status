@@ -11,9 +11,11 @@ For example, let's say you want to measure the actual level of a battery with ra
 ![alt text](https://github.com/ipa-fog-ab/battery_status/blob/master/imgs/battery.jpg)
 
 Scaling the voltage using a voltage divider, 
-[R2/(R1+R2)]*25.4 = 1.8.
-This gives, R1 = 13.11 R2
-In this case, choose R1 = 680k and R2 = 51.1k
+[R2/(R1+R2)]*25.4 = 1.8. \n
+This gives, R1 = 13.11 R2 \n
+In this case, we choose R1 = 680k and R2 = 51.1k* \n
+
+
 
 
 
