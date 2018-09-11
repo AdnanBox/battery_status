@@ -7,3 +7,8 @@ The battery level is measured at the 12 bit analog input(XADC0AIN_0) of the shif
 The value of the resitors used should be at least 50k ohms.
 
 For example, let's say you want to measure the actual level of a battery with rating 25.4V
+
+![alt text](https://github.com/ipa-fog-ab/battery_status/blob/master/imgs/battery.jpg)
+
+
+
