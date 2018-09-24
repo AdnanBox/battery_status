@@ -33,3 +33,6 @@ rosrun battery_status batter_status
 rosrun battery_status led_glow
 ```
 
+
+
+NOTE: The nodes read_voltage.cpp and subscriber.cpp are optional. Used only for testing purposes of the ultrasonic sensor.
