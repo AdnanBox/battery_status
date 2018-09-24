@@ -15,7 +15,7 @@ Since the analog pin has a 12 bit input, the value of the voltage ranges from 0 
 This value is published on the topic /status. This value is used to determine the charge of the battery and color of the LED.
 A message of type std_msgs::ColorRGBA is published under the topic name /color. This topic is subscribed in another node to fire up the LED. \
 
-Connect RED, GREEN and BLUE LEDs to GPIO pins 11, 13 and 15 on the ODROID.
+Connect RED, GREEN and BLUE LEDs to GPIO pins 11, 13, and 15 respectively, on the 40 pin header of the ODROID shifter shield.
 
 Battery level :
 Green LED = 66.6 - 100% \
@@ -23,5 +23,13 @@ Yellow LED = 33.3 - 66.6% \
 Red LED = 0 - 33.3% 
 
 
-
+How to:
+1. Run the battery_status node using :
+```
+rosrun battery_status batter_status
+```
+2. To determine the battery status with the help of LEDs, run :
+```
+rosrun battery_status led_glow
+```
 
